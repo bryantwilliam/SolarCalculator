@@ -1,6 +1,6 @@
 function openCity(evt, cityName) {
     // Declare all variables
-    var i, tabcontent, tablinks;
+    var i, tablinks;
 
     hideAllTabs();
 
@@ -10,14 +10,14 @@ function openCity(evt, cityName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    // Show the current tab, and add an "active" class to the button that opened the tab
+    // Show the current tab content, and add an "active" class to the button that opened the tab
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
 function hideAllTabs() {
     // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
+    var tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }

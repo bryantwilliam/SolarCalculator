@@ -1,27 +1,30 @@
 .calculator {
     font-size: medium;
+    width: 30%;
+    border-radius: 20px;
+    border: 1px solid #0000FF;
+    background-color: #840dd9;
+    min-width: fit-content;
 }
 
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    border: 1px solid #0000FF;
-    background-color: #840dd9;
 
+    display: flex;
+    border-bottom: 1px solid #0000FF;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-
-    float: left;
-    outline: none;
+    font-size: 140%;
+    flex: 1 1 auto;
+    margin: 1%;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 2%;
     transition: 0.3s;
     box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
     background-color: #00FF00 ;
     border-radius: 20px;
-    display: block;
     content: '';
     border: 1px solid #e4e5e5;
 }
@@ -41,8 +44,6 @@
     color: #fcbc1c; /*colour 32*/
     display: none;
     padding: 6px 12px;
-    border: 1px solid #00FFFF;
-    border-top: none;
     animation: fadeEffect 0.5s; /* Fading effect takes 1 second */
 }
 
